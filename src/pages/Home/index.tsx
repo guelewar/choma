@@ -24,7 +24,7 @@ export default function Home() {
             </Link>
           </div>
           <div className="border border-dotted w-[279] h-[278] p-8 relative">
-            <Link to={''}>
+            <Link to={'download'}>
               <img src={youtub} className="mx-auto w-[103] h-[76]" alt="" />
               <span className="whitespace-nowrap absolute left-0 right-0 bottom-1 text-lg">
                 Single Download

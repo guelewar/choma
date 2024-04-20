@@ -69,14 +69,14 @@ export default function Header() {
             <ul className="font-medium absolute md:static bg-violet-600 top-16 left-4 right-4 bottom-4 z-10 flex flex-col p-4 md:p-0 mt-4 rounded-lg md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:bg-white">
               {MenuLinks.map(({ id, name, link }) => (
                 <li key={id}>
-                  <a
-                    href={link}
+                  <Link
+                    to={link}
                     onClick={closeMenu}
                     className={`block py-2 px-3 text-white md:text-black rounded md:border-0 hover:text-violet-600 md:p-0 ${name === 'Youtube Downloader' ? 'text-violet-600 bg-white md:bg-transparent md:text-violet-600' : ''}`}
                     aria-current={name === 'Youtube Downloader' ? 'page' : undefined}
                   >
                     {name}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -91,21 +91,21 @@ const MenuLinks = [
   {
     id: 1,
     name: 'Youtube Downloader',
-    link: '/#hero',
+    link: 'download',
   },
   {
     id: 2,
     name: 'Youtube Converter',
-    link: '/#about',
+    link: '',
   },
   {
     id: 3,
     name: 'Youtube to Mp3',
-    link: '/#services',
+    link: '',
   },
   {
     id: 4,
     name: 'Language',
-    link: '/#why-choose-us',
+    link: '',
   },
 ];

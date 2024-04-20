@@ -15,6 +15,9 @@ export default {
       'black': '#000',
       violet: {
         600: '#6E41E2',
+      },
+      red: {
+        600: '#FF5B79',
       }
     },
     extend: {},

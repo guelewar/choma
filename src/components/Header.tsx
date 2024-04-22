@@ -72,7 +72,7 @@ export default function Header() {
                   <Link
                     to={link}
                     onClick={closeMenu}
-                    className={`block py-2 px-3 text-white md:text-black rounded md:border-0 hover:text-violet-600 md:p-0 ${name === 'Youtube Downloader' ? 'text-violet-600 bg-white md:bg-transparent md:text-violet-600' : ''}`}
+                    className={`block py-2 px-3 rounded md:border-0 hover:text-violet-600 md:p-0 ${name === 'Youtube Downloader' ? 'text-violet-600 bg-white md:bg-transparent md:text-violet-600' : 'text-white md:text-black'}`}
                     aria-current={name === 'Youtube Downloader' ? 'page' : undefined}
                   >
                     {name}

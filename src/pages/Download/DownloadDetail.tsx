@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import Button from '../../components/Button';
 import Input from '../../components/Input';
+import VideoDetail from '../../components/VideoDetail';
 
-export default function Download() {
+export default function DownloadDetail() {
   const [url, setUrl] = useState<string>('');
   const [error, setError] = useState<boolean>(false);
 
@@ -26,6 +27,7 @@ export default function Download() {
         <Input value={url} onChange={handleInputChange} error={error} />
         <Button error={error} onClick={handleDownload} />
       </div>
+      <VideoDetail />
     </section>
   );
 }
